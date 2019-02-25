@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+ /* HEADER */
+header {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    border-bottom: #E0E0E0 solid 1px;
+    z-index: 128;
+}
+#menuBtn {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    color: transparent;
+    background: url(../icons/icongray.png);
+    background-position: center;
+    background-size: 49%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 64px;
+    transition: 0.3s;
+}
+#menuBtn:hover {
+    background-color: #E0E0E0;
+    background: url(../icons/icon.svg);
+    background-position: center;
+    background-size: 49%;
+    background-repeat: no-repeat;
+}
+#docName {
+    padding: 1px;
+    height: 32px;
+    background: none;
+    cursor: text;
+    border: none;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* END HEADER */
+
+/* TOOLBAR */
+#toolbar {
+    position: absolute;
+    top: 64px;
+    height: 38px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    border-bottom: #E0E0E0 solid 1px;
+    z-index: 64;
+}
+.toolbar-btn {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    color: #616161;
+    background: none;
+    border: none;
+    border-radius: 38px;
+    transition: 0.3s;
+}
+.toolbar-btn:hover {
+    background: #E0E0E0;
+}
+.toolbar-drop {
+    border-left: 1px solid transparent; /* Invisible border, so the total width doesn't change */
+    transition: 0.3s;
+}
+.toolbar-drop input {
+    width: 56px;
+    height: 36px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 0;
+    transition: 0.3s;
+}
+.toolbar-drop input::-webkit-calendar-picker-indicator {
+  width: 6px;
+  height: 34px;
+  background: url("../icons/caret-down.svg");
+  background-color: #E0E0E0;
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  transition: 0.3s;
+}
+.toolbar-drop:hover {
+    border-left: 1px solid #E0E0E0;
+}
+
+.toolbar-sep {
+    margin-left:  2px;
+    margin-right: 2px;
+    height: 19px;
+    border-left: 1px solid #E0E0E0;
+}
+/* END TOOLBAR */
+
+/* CONTENT */
+main {
+  position: absolute;
+  top:    102px;
+  bottom: 18px;
+  width: 100%;
+}
+#viewport {
+  width:  100%;
+  height: 100%;
+}
+#drawing {
+  width:  100%;
+  height: 100%;
+}
+/* END CONTENT */
+
+/* STATUSBAR */
+footer {
+    position: absolute;
+    width:  100%;
+    height: 18px;
+    bottom: 0;
+    border-top: #E0E0E0 solid 1px;
+    z-index: 128;
+}
+/* END STATUSBAR */

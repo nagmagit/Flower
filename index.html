@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Actual meta-->
+    <title>New diagram - Flower</title>
+    <!--Style-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--SVG magic wand-->
+    <script type="text/javascript" src="./js/snap.svg-min.js"></script>
+    <!--SVG to PNG converter-->
+    <script type="text/javascript" src="./js/svg-toDataUrl-min.js"></script>
+</head>
+
+<body>
+    <header>
+        <button id="menuBtn"><i class="fas fa-bars"></i></button>
+        <input id="docName" value="New diagram" style="width: 99px;">
+    </header>
+    <div id="toolbar">
+        <button class="toolbar-btn" id="viewAllDrawsBtn"><i class="fas fa-grip-horizontal"></i></button>
+        <div class="toolbar-sep"></div>
+        <button class="toolbar-btn" id="undoBtn"><i class="fas fa-undo-alt"></i></button>
+        <button class="toolbar-btn" id="redoBtn"><i class="fas fa-redo-alt"></i></button>
+        <div class="toolbar-sep"></div>
+        <div class="toolbar-drop">
+            <input id="zoomLevel" value="100%" list="zoomList">
+            <datalist id="zoomList">
+                <option>50%</option>
+                <option>75%</option>
+                <option>90%</option>
+                <option>100%</option>
+                <option>110%</option>
+                <option>125%</option>
+                <option>150%</option>
+                <option>175%</option>
+                <option>200%</option>
+                <option>250%</option>
+                <option>300%</option>
+            </datalist>
+        </div>
+        <div class="toolbar-sep"></div>
+        <button class="toolbar-btn" id="snapshotPNGBtn"><i class="fas fa-camera"></i></button>
+        <button class="toolbar-btn" id="snapshotSVGBtn"><i class="fas fa-vector-square"></i></button>
+    </div>
+    <main>
+        <div id="viewport">
+            <svg id="drawing"></svg>
+        </div>
+    </main>
+    <footer>Statusbar</footer>
+    <script type="text/javascript" src="./js/interface.js"></script>
+    <script type="text/javascript" src="./js/canvas.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="149.33318mm"
+   height="146.93333mm"
+   viewBox="0 0 111.99988 110.2"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="icon.svg">
+  <title
+     id="title4561">Flower</title>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3752">
+      <stop
+         style="stop-color:#1e009c;stop-opacity:1"
+         offset="0"
+         id="stop3748" />
+      <stop
+         style="stop-color:#fd019e;stop-opacity:0"
+         offset="1"
+         id="stop3750" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3752"
+       id="linearGradient3754"
+       x1="71.109863"
+       y1="6.8008571"
+       x2="127.79903"
+       y2="116.69111"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-15.531865,-6.800857)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="398.99567"
+     inkscape:cy="309.60075"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1360"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="-0.5"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Flower</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:url(#linearGradient3754);stroke-width:0.26458332"
+       d="M 55.578001,0 A 26,26 0 0 0 29.933055,21.913392 26,26 0 0 0 25.999961,21.581628 26,26 0 0 0 0,47.581592 26,26 0 0 0 15.547887,71.370837 26,26 0 0 0 12.141377,84.200027 26,26 0 0 0 38.141856,110.2 26,26 0 0 0 57.044578,102.00463 26,26 0 0 0 75.223829,109.45017 26,26 0 0 0 101.22379,83.450207 26,26 0 0 0 97.306203,69.757498 26,26 0 0 0 111.99988,46.367712 26,26 0 0 0 85.999913,20.367749 26,26 0 0 0 81.039493,20.867459 26,26 0 0 0 55.578001,0 Z m 0.42168,37.100062 A 18,18 0 0 1 73.999615,55.099997 18,18 0 0 1 55.999681,73.099931 18,18 0 0 1 37.999746,55.099997 18,18 0 0 1 55.999681,37.100062 Z"
+       id="path21"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="fill:#ccce00;fill-opacity:1;stroke-width:0.27048203"
+       id="path3746"
+       cx="55.999939"
+       cy="55.099998"
+       r="12.5" />
+  </g>
+</svg>
