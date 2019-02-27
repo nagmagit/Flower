@@ -42,6 +42,7 @@ header {
 }
 /* END HEADER */
 
+
 /* TOOLBAR */
 #toolbar {
     position: absolute;
@@ -102,6 +103,7 @@ header {
 }
 /* END TOOLBAR */
 
+
 /* CONTENT */
 main {
   position: absolute;
@@ -119,10 +121,47 @@ main {
 }
 /* END CONTENT */
 
+
+/* CONTEXTMENU */
+#contextMenu {
+    position: absolute;
+    display: none;
+    width: 300px;
+    border: 1px solid #E0E0E0;
+    box-shadow: #6E6E6E 2px 2px 3px;
+    z-index: 1024;
+}
+#contextMenu button {
+        display: flex;
+    width: 100%;
+    height: 32px;
+    padding-left: 0px;
+    background: white;
+    border: none;
+    justify-items: flex-start
+}
+#contextMenu button:hover {
+    background: #E0E0E0;
+}
+#contextMenu button .ctxMenu-btnImg {
+    width: 48px;
+    line-height: 32px;
+    text-align: center;
+    justify-self: flex-start;
+}
+#contextMenu button .ctxMenu-btnTxt {
+    line-height: 32px;
+}
+#contextMenu .ctxMenu-separator {
+    border-bottom: 1px solid #E0E0E0;
+}
+/* ENDCONTEXTMENU */
+
+
 /* STATUSBAR */
 footer {
     position: absolute;
-    width:  100%;
+    width: 100%;
     height: 18px;
     bottom: 0;
     border-top: #E0E0E0 solid 1px;

@@ -78,6 +78,7 @@ enum Figure {
 class Shape {
     position: { x: number, y: number };
     size: { w: number, h: number };
+    movable: boolean;
     color: Color;
     figure: Figure;
     shape: any;
@@ -100,7 +101,7 @@ class Shape {
 
     handleEvent(event) {
         if (event.type == "mousedown") {
-            if (event.which == 2) {
+            if (this.movable && event.which == 2) {
                 event.preventDefault();
                 event.stopPropagation();
                 startMousePosition = { x: event.clientX, y: event.clientY };
@@ -296,13 +297,13 @@ class Paper extends Shape {
     }
 };
 
+
 let viewport: Viewport = new Viewport(document.getElementById("viewport"));
 let paper: Paper = new Paper(0, 32, 800, 600, Color.white, viewport);
 viewport.mainPaper = paper;
 
 paper.alignXToCenter();
 viewport.applyZoom(1);
-
 
 /*****  Create root node  *****/
 (function () {
@@ -320,4 +321,19 @@ window.addEventListener("resize", function () {
     viewport.height = viewport.node.offsetHeight;
 
     sGlobal.node.setAttribute("viewBox", `0 0 ${viewport.width / viewport.zoomRatio} ${viewport.height / viewport.zoomRatio}`);
+});
+// Display context menu
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+
+    var menu = document.getElementById("contextMenu");
+
+    menu.style["display"] = 'block';
+    menu.style["top"]  = event.clientY + "px";
+    menu.style["left"] = event.clientX + "px";
+}, false);
+document.addEventListener("click", function (event) {
+    var menu = document.getElementById("contextMenu");
+
+    menu.style["display"] = 'none';
 });
