@@ -1,3 +1,4 @@
+/*****  Global vars  *****/
 var sGlobal = Snap("#drawing");
 var startMousePosition = { x: 0, y: 0 };
 
@@ -310,11 +311,12 @@ viewport.applyZoom(1);
     var x = "center", y = 32;
     var width = 200, height = 50;
 
-    paper.drawFigure(Figure.Stadium, x, y, width, height, "Start", new Color("#8bc34a"))
+    var rootShape = paper.drawFigure(Figure.Stadium, x, y, width, height, "Start", new Color("#8bc34a"));
+    rootShape.movable = true;
 })();
 
 
-/*****  EVENTS  *****/
+/*****  Events  *****/
 // Adjust the viewport when resizing
 window.addEventListener("resize", function () {
     viewport.width = viewport.node.offsetWidth;
